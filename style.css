@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-family: "Outfit", "serif";
+    font-weight: 300;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.content {
+    width: 22%;
+    height: auto;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.content .equilibrium-image {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    border-radius: 10px;
+}
+.content .equilibrium-image .equilibrium {
+    width: 100%;
+    border-radius: 10px;
+}
+.content .equilibrium-image .backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.418);
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+}
+.backdrop .view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.backdrop {
+    display: none;
+}
+
+.content .equilibrium-image:hover {
+    .backdrop {
+        display: block;
+    }
+}
+
+.main-section h2{
+    color: white;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.main-section>p {
+    line-height: 1.5;
+}
+.value_duration {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.value_duration .svg {
+    object-fit: contain;
+}
+
+.value_duration .value, .value_duration .duration {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.value_duration .value p{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+hr {
+    border: solid 0.3px  hsl(215, 32%, 27%);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    
+}
+.author .profile-picture img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid 1px white;
+}
+.author span {
+    color: white;
+    font-weight: 400;
+}
+
+.main-section h2:hover, 
+.author span:hover {
+    color:  hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: rgba(255, 255, 255, 0.575); }
+
+@media (max-width:1000px) {
+    .content {
+        width: 80%;  
+    }
+}
