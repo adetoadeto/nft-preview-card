@@ -139,7 +139,11 @@ hr {
 .attribution a { color: rgba(255, 255, 255, 0.575); }
 
 @media (max-width:1000px) {
+    .container {
+        padding: 4rem 0;
+    }
     .content {
-        width: 75%;  
+        width: 75%; 
+        max-width: 400px; 
     }
 }
